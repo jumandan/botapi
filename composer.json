@@ -1,0 +1,30 @@
+{
+    "name": "jumandan/BotApi",
+    "type": "library",
+    "description": "Telegram Bot Api Implementation",
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "jumandan/config": "dev-master",
+        "jumandan/exception": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "BotApi\\": "src/"
+        }
+    },
+    "repositories": [{
+        "type": "git",
+        "url": "https://github.com/jumandan/config"
+    }, {
+        "type": "git",
+        "url": "https://github.com/jumandan/exception"
+    }]
+}
